@@ -1,0 +1,60 @@
+.card{
+    height: 600px;
+    box-shadow: 10px 14px 20px #000;
+}
+
+.moviecard{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.moviecard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.movietitle{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 5px;
+    
+    
+}
+
+.movietitle h3{
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movietitle .rad{
+    border-radius: 50%;
+}
+
+.movieoverview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    padding: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    // transform: scale(0);
+    transform: translateY(500px);
+    transition: all .7s linear;
+}
+
+.moviecard:hover .movieoverview{
+    // transform: scale(1);
+    transform: translateY(0);
+    top: 30%;
+    overflow-y: auto;
+}
